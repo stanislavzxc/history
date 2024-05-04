@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/second.css') }}">
+    <title>Ваше фото!</title>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <h1>Ваше фото</h1>
+    <h3>вы можете нажать на него</h3>
+    <div id="container">
+        <img src="{{ url_for('static', filename='img/image.jpg') }}" id="sec-image">
+    </div>
+</body>
+</html>
